@@ -1,0 +1,58 @@
+# ---- data / media (never commit raw captures) ----
+data/raw/
+data/processed/
+data/tmp/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.heic
+
+# ---- large model artifacts ----
+outputs/
+runs/
+*.ply
+*.splat
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.obj
+*.mtl
+*.glb
+*.gltf
+*.fbx
+*.stl
+
+# ---- third-party checkouts (re-cloned by scripts) ----
+third_party/
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---- tooling / logs ----
+wandb/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- local editor / agent state ----
+.opencode/
+.vscode/
+.idea/
+.cache/
+
+# ---- local secrets / machine-specific ----
+.env
+*.local.toml
